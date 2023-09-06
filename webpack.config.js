@@ -6,9 +6,20 @@ module.exports = {
     entry: {
         index: path.resolve(__dirname, 'src/index.js'),
     },
+    devServer: {
+        static: {
+            directory: path.resolve(__dirname, 'dist')
+        },
+        port: 3000,
+        open: true,
+        hot: true,
+        compress: true,
+        historyApiFallback: true,
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name][contenthash].js',
+        clean: true,
     },
     module:  {
         rules: [
