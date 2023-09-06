@@ -7,4 +7,5 @@ laughImg.src = laughing;
 laughImg.style.height = "70px";
 laughImg.style.marginBottom = "25px";
 
-console.log(generateJoke());
+const jokeBtn = document.getElementById('jokeBtn');
+jokeBtn.addEventListener('click', generateJoke);
