@@ -1,0 +1,42 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #fff;
+        height: 300px;
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+
+        .joke{
+            color: #000;
+        }
+
+        .btn {
+            background-color: lightcoral;
+            color: #fff;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}
